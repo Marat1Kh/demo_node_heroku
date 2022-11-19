@@ -6,7 +6,7 @@ const headers = {
 'Content-Type,Accept-Control-Allow-Headers',
 'Content-Type': 'text/plain; charset=utf-8'
 };
-Server((req) => res
+Server((req, res) -> res
 .writeHead(200, headers)
 .end(req.url=== '/login' ? 'LOGIN' : 'Not done yet')
 }
