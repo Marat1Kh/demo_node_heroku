@@ -9,5 +9,5 @@ const headers = {
 Server((req, res) -> res
 .writeHead(200, headers)
 .end(req.url=== '/login' ? 'LOGIN' : 'Not done yet')
-}
+)
 .listen(process.env.PORT);
