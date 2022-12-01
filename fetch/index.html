@@ -7,18 +7,18 @@
         <input type="text" id="inp">
         <button id="bt"></button>
         <script>
-            const $inp = document.querySelector('#inp');
-            const $bt = document.querySelector('#bt');
+            const $inpx = document.querySelector('#inp');
+            const $btx = document.querySelector('#bt');
             function onButtonClick(){
-                fetch($inp.value)
+                fetch($inpx.value)
                 .then((response) => {
             return response.text();
           })
           .then((string) => {
-            $inp.value = string;
+            $inpx.value = string;
           });
                 }
-            $bt.addEventListener("click", onButtonClick);
+            $btx.addEventListener("click", onButtonClick);
             </script>
     </body>
 </html>

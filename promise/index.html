@@ -1,10 +1,10 @@
 function task(x) {
-    return new Promise(() => {
+    return new Promise((yes,no) => {
       if (x < 18){ 
-        ('yes');
+        yes('yes');
     }
       else{
-        ('no');
+        no('no');
     });
 }
 }
