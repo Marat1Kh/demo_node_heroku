@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="inp">
+        <button id="bt"></button>
+        <script>
+            const $inp = document.querySelector('#inp');
+            const $bt = document.querySelector('#bt');
+            function onButtonClick(){
+                fetch($inp.value)
+                .then((response) => {
+            return response.text();
+          })
+          .then((string) => {
+            $inp.value = string;
+          });
+                }
+            $bt.addEventListener("click", onButtonClick);
+            </script>
+    </body>
+</html>
