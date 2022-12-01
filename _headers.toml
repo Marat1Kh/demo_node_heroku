@@ -1,9 +1,9 @@
-https_only = true
+https-only:true
+[[headers]]
+for ="/**"
+"Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8"
 
-[headers."/**"]
-Access-Control-Allow-Origin = "*"
-Content-Type = "text/plain; charset=utf-8"
-
-[headers."/fetch/"]
-Access-Control-Allow-Origin = "*"
-Content-Type = "text/html; charset=utf-8"
+    [[headers. /fetch/]]
+     "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/html; charset=utf-8"
