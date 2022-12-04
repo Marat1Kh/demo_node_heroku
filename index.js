@@ -20,7 +20,7 @@ const server = Server((req, res) => {
         res.write('<h1>something</h1>\n');
         res.write(JSON.stringify(req.headers));
     } else if (req.url === '/index.html') {
-        fs.readFile(path.join(__dirname, 'public', 'index.html'), function (err, html) {
+        fs.readFile(path.join('index.html'), function (err, html) {
             if (err) throw err; 
             res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8', ...CORS });
             res.write(html);
