@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <button onclick="fetchUrl()">Button</button>
+    <script>
+        function fetchUrl() {
+            const url = 'chimerical-jelly-2259b7.netlify.app/';
+
+            fetch(url).then(resp => resp.text())
+                        .then(resp => console.log(resp))
+                        .catch(error => console.log(error))
+        }
+    </script>
+</body>
+</html>
