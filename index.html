@@ -1,1 +1,18 @@
-itmo336199
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <button onclick="fetchUrl()">Button</button>
+    <script>
+        function fetchUrl() {
+            const url = 'https://demonodeheroku.marat1kh.repl.co/';
+
+            fetch(url).then(resp => resp.text())
+                        .then(resp => console.log(resp))
+                        .catch(error => console.log(error))
+        }
+    </script>
+</body>
+</html>
